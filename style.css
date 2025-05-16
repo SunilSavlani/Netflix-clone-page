@@ -1,0 +1,162 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/ccc946bd-e9b7-4ed8-8fe2-f130d631c2cd/eab5ad8e-fb9a-4644-8b64-44852c7d07b0/US-en-20230410-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.signin {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.email-form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+.email-form button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Feature Sections */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  border-top: 8px solid #222;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.feature .text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.feature .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.feature .text p {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 40px 10%;
+  border-top: 8px solid #222;
+  color: #999;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-cols ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-cols li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
